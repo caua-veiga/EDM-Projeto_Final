@@ -1,5 +1,3 @@
-# Projeto escolhido
-
 # Interface com o leitor de RFID RC522 _ Aplicação segurança/banco
 
 ## 1. Propostas de interface
@@ -28,3 +26,5 @@ Independentemente da interface escolhida na secção 1 (bancos ou segurança) a 
 - 'ESP32 com RFID: Controle de Acesso' -- *parece bom, mas código em C* -- https://www.youtube.com/watch?v=8NNyTiPXzdc
 
 - 'ESP32: How to read RFID tags with a RFID Reader' -- *código em C* -- https://www.youtube.com/watch?v=pJLjFm4Ipro
+
+- https://lastminuteengineers.com/how-rfid-works-rc522-arduino-tutorial/
