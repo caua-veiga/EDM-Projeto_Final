@@ -15,6 +15,8 @@ Independentemente da interface escolhida na secção 1 (bancos ou segurança) a 
 
 ### 2.1.1 - Referências Úteis
 
+#### Vídeos
+
 - 'µC-15 RFID en Micropython (SPI)' -- -- https://www.youtube.com/watch?v=rt8vbWKecqI
 
 -  '026 - ESP32 MicroPython: MFRC522 RFID' -- --https://www.youtube.com/watch?v=KufRt3p9tCI
@@ -27,6 +29,8 @@ Independentemente da interface escolhida na secção 1 (bancos ou segurança) a 
 
 - 'ESP32: How to read RFID tags with a RFID Reader' -- *código em C* -- https://www.youtube.com/watch?v=pJLjFm4Ipro
 
-- https://lastminuteengineers.com/how-rfid-works-rc522-arduino-tutorial/
+#### Websites
 
-- ... exemplo
+- -- In depth tutorial of how rfid rc522 works, but it is in arduino -- https://lastminuteengineers.com/how-rfid-works-rc522-arduino-tutorial/
+
+- -- Code examples for rfid rc522 in micropython --  https://techtotinker.blogspot.com/2021/09/026-esp32-micropython-mfrc522-rfid.html
