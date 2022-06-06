@@ -35,3 +35,5 @@ except KeyboardInterrupt:
 
 finally:
     spi.deinit()
+
+# Exemplo dois
