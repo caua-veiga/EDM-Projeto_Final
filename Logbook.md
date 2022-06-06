@@ -28,3 +28,5 @@ Independentemente da interface escolhida na secção 1 (bancos ou segurança) a 
 - 'ESP32: How to read RFID tags with a RFID Reader' -- *código em C* -- https://www.youtube.com/watch?v=pJLjFm4Ipro
 
 - https://lastminuteengineers.com/how-rfid-works-rc522-arduino-tutorial/
+
+- ... exemplo
