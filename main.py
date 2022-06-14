@@ -25,10 +25,21 @@ try:
             (stat, raw_uid) = rdr.anticoll()
             if stat == rdr.OK:
                 card_id = "0x%02x%02x%02x%02x" % (raw_uid[0], raw_uid[1], raw_uid[2], raw_uid[3])
+                #ids[card_id] = ids.get(card_id, card_id)
+
+                # Para caso o cartão ainda não estiver registrado:
+                if card_id not in ids:
+                    print('O cartão ainda não está registrado, por favor entre as informações a seguir: ')
+                    ob = input('Objeto: ')
+                    nm = input('Nome: ')
+                    es = input('Estado: ')
+                    cn = 0
+                    ids[card_id] = [ob,nm,es,cn]
+
                 print(f'{ids[card_id][0]}: {ids[card_id][1]} --',end=' ')
 
                 #Para o caso em que é liberado
-                if ids[card_id][2] == 'Liberado':
+                if ids[card_id][2].lower() == 'liberado':
                     # Se estiver a entrar
                     if ids[card_id][3] == 0:
                         print(f'Entrada {ids[card_id][2]}')
