@@ -4,12 +4,14 @@
 #import webrepl
 #webrepl.start()
 
-from mysecrets import ssid, password
+from mysecrets import ssid, password, api_key
 import time
 import network
+import urequests
 
 wlan = network.WLAN(network.STA_IF)
 wlan.active(True)
+
 if not wlan.isconnected():
     print('Connecting to network...')
     wlan.connect(ssid, password)
