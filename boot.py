@@ -10,6 +10,7 @@ import network
 
 wlan = network.WLAN(network.STA_IF)
 wlan.active(True)
+print(wlan.scan())
 if not wlan.isconnected():
     print('Connecting to network...')
     wlan.connect(ssid, password)
