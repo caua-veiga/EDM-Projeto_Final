@@ -77,7 +77,7 @@ Este serviço permite automatizar certas ações: as ações são executadas sem
 O código foi baseado no artigo: https://microcontrollerslab.com/micropython-esp32-esp8266-send-sensor-readings-via-email-ifttt/
 
 
-## 3.5. Registo de acessos
+## 3.5. Registro de acessos
 
 # 4. Discussão/Conclusão/Coisas a melhorar/acrescentar
 
