@@ -43,11 +43,11 @@ Especificações:
 
 # 3.1. Tecnologia *Radio Frequency IDentification*
 
-Um sistema RFID consiste basicamente de dois componentes principais, um objeto contendo uma *tag* (o qual será identificado), e um *leitor* que irá ler está *tag*.
+Um sistema RFID consiste basicamente em dois componentes principais, um objeto contendo uma *tag* (o qual será identificado), e um *leitor* que irá ler esta *tag*.
 
-O *leitor* consiste em um módulo de rádio frequência e uma antena que gera um campo eletromagnético de alta frequência. Já a *tag* é um microchip que guarda e processa informações, e possuí uma antena para receber e transmitir sinais. 
+O *leitor* consiste em um módulo de rádiofrequência e uma antena que gera um campo eletromagnético de alta frequência. Já a *tag* é um microchip que guarda e processa informações, e possuí uma antena para receber e transmitir sinais. 
 
-Quando a *tag* é aproximada do *leitor*, o *leitor* gera um campo magnético e o chip responde transmitindo suas informações para o leitor na forma de outro sinal de rádio, este processo é chamado *'retrodifusão'*. O *leitor* interpreta este sinal e manda os dados para o microcontrolador.
+Quando a *tag* é aproximada ao *leitor*, o *leitor* gera um campo magnético e o chip responde transmitindo as suas informações para o leitor na forma de outro sinal de rádio, este processo é chamado *'retrodifusão'*. O *leitor* interpreta este sinal e manda os dados para o microcontrolador.
 <figure>
 <img src="images/RFID_leitor_tag.png"
      alt="RFID leitor_tag image"
