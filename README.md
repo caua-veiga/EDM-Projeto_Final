@@ -8,7 +8,7 @@ Desenvolveu-se, no contexto da cadeira de Eletrónica Digital e Microprocessador
 
 Neste projeto, idealizou-se uma situação em que uma empresa possui uma sala de acesso restrito. O acesso a esta sala é garantido sempre que o cartão de um funcionário autorizado é detetado pelo leitor.
 
-Todos os acessos garantidos são registados num website e, no caso de um funcionário não autorizado tentar ter acesso à sala, algumas pessoas previamente definidas recebem um e-mail de notificação da ocurrência
+Todos os acessos garantidos são registados num website e, no caso de um funcionário não autorizado tentar ter acesso à sala, algumas pessoas previamente definidas recebem um e-mail de notificação da ocorrência
 
 # 2. Material
 
@@ -47,9 +47,9 @@ A interface tem 3 comportamentos distintos:
 
 ### 3.1.1. Se o cartão tiver autorização de acesso: 
 
-Ao entrar: o led verde pisca uma vez (simbolizando o desbloqueio da porta), o ID do cartão, o nome do proprietário, a hora de acesso e a informação "entrou" são registadas na página Web.
+Ao entrar: o led verde pisca uma vez (simbolizando o desbloqueio da porta), o ID do cartão, o nome do proprietário, a hora de acesso e a informação "Entrada Liberada" são registadas na página Web.
 
-Ao sair: o led verde pisca duas vezes, o ID do cartão, o nome do proprietário, a hora de acesso e a informação "saiu" são registadas na página Web.
+Ao sair: o led verde pisca duas vezes, o ID do cartão, o nome do proprietário, a hora de acesso e a informação "Saída Liberada" são registadas na página Web.
 
 ### 3.1.2. Se o cartão não tiver autorização de acesso: 
 
@@ -76,6 +76,8 @@ O código foi baseado no artigo: https://microcontrollerslab.com/micropython-esp
 
 
 ## 3.5. Registro de acessos
+
+
 
 # 4. Discussão/Conclusão/Coisas a melhorar/acrescentar
 
