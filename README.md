@@ -43,9 +43,9 @@ Especificações:
 <figure>
 <img src="images/montagem.jpeg"
      alt="Montagem Sistema"
-     width="500" 
-     height="322"
-     style="vertical-align:middle;margin:10px 115px" />
+     width="730" 
+     height="500"
+     style="vertical-align:middle;margin:10px 65px" />
 
 <figcaption align = "center"><b>Fig.2. Montagem utilizada.</b></figcaption>
 </figure>
