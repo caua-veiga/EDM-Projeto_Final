@@ -38,6 +38,18 @@ Especificações:
 
 - Taxa de transferência: 10 Mbit/s;
 
+## 2.2. Esquema de montagem
+
+<figure>
+<img src="images/montagem.jpeg"
+     alt="Montagem Sistema"
+     width="500" 
+     height="322"
+     style="vertical-align:middle;margin:10px 115px" />
+
+<figcaption align = "center"><b>Fig.2. Montagem utilizada.</b></figcaption>
+</figure>
+
 
 # 3. Descrição
 
@@ -89,10 +101,6 @@ Uma notificação é enviada por e-mail a um grupo de pessoas pré-definidas com
 
 Prosegue-se ao cadastro da pessoa: O nome é introduzido, juntamente com o estatuto de acesso à sala. A interface pede um PIN secreto. Este PIN é definido no ficheiro "mysecrets.py".
 
-## 3.3. Montagem
-
-(Inserir esquema do circuito)
-
 
 ## 3.4. Comuniação entre componentes
 O RFID RC522 comunica com o ESP32 através do protocolo SPI tal e tal. A programação foi baseada em talv e tal código.
@@ -106,7 +114,7 @@ O código foi baseado no artigo: https://microcontrollerslab.com/micropython-esp
 
 
 ## 3.6. Registro de acessos
-
+TO-DO: falar website
 
 
 # 4. Discussão/Conclusão/Coisas a melhorar/acrescentar
