@@ -103,9 +103,8 @@ async def main():
                         print('O cartão ainda não está registrado, por favor entre as informações a seguir: ')
                         ob = input('Objeto: ')
                         nm = input('Nome: ')
-                        es = input('Estado: ')
-                        cn = 0
-                        ids[card_id] = [ob,nm,es,cn]
+                        es = input('Estado (-1:Negado||0:Liberado): ') # -1= negado, 0=liberado
+                        ids[card_id] = [ob,nm,es]
 
                     print(f'{ids[card_id][0]}: {ids[card_id][1]} --',end=' ')
 

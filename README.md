@@ -57,9 +57,19 @@ Quando a *tag* é aproximada do *leitor*, o *leitor* gera um campo magnético e 
  <a href ='lastminuteengineers.com'>lastminuteengineers.com</a></b></figcaption>
 </figure>
 
-## 3.1. Cadastro Cartões
+## 3.2. Cadastro Objetos
 
-TO-DO
+Para a realização deste projeto foi fornecido um cartão e um chaveiro, ambos contendo *tag* RFID para se comunicarem com o leitor, para além disso, descobriu-se que os cartões de estudante UPorto funcionam com a mesma tecnologia e também podem ser usados. 
+
+Cada tag possuí um *ID* único, permitindo então identificar esta *tag* a partir do seu *ID*, e no nosso caso, outras informações muito úteis para o funcionamento do sistema de segurança, como por exemplo se a passagem deste cartão é liberada ou negada.
+
+Deste modo, criou-se uma rotina que ao apróximar do leitor uma *tag* não registrada é permitido definir as seguintes características:
+
+- Objeto (eg. Chaveiro, Cartão UP, ...)
+- Nome do usuário
+- Estado (Liberado ou Negado)
+
+Após isso essa informação é guardada em um arquivo *.json* de modo a ser utilizada posteriormente para reconhecer o objeto novamente.
 
 ## 3.2. Descrição do funcionamento da interface
 
