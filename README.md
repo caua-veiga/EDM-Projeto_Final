@@ -1,5 +1,3 @@
-# FILE PARA O RELATÓRIO: 
-
 # Interface com o leitor de RFID RC522
 ## Cauã Veiga, Rafael Lobão
 ## Faculdade de Engenharia da Universidade do Porto
