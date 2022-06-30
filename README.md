@@ -149,12 +149,8 @@ O código foi baseado no artigo: https://microcontrollerslab.com/micropython-esp
 ## 3.6. Registro de acessos
 De modo a gerir o histórico de acessos foi criada uma página web na qual é registrada em tempo real os acessos e tentativas de acessos realizadas. Para isso é gerado um HTML o qual é hosteado a partir do método sockets. 
 
-Os dados registrados são do tipo, como mostrado na imagem (REFERENCIAR IMAGEM PRINT WEBSITE):
+Os dados registrados são do tipo, como mostrado na imagem:
 
-|  Horário  |  Tipo  |  Nome  |  Estado  |
-|--------|----------|--------|----------|
-
-Onde 'Horário' representa o horário e dia em qual o acesso ocorreu, com precisão de segundos. Para obter o horário atual foi usada a API *timeapi.io* através do método *urequest.get()*. 
 
 <figure>
 <img src="images/print_website.png"
@@ -163,12 +159,14 @@ Onde 'Horário' representa o horário e dia em qual o acesso ocorreu, com precis
      height="300"
      style="vertical-align:middle;margin:10px 110px" />
 
-<figcaption align = "center"><b>Fig.4 - Exemplo website.
+<figcaption align = "center"><b>Fig.4 - Exemplo website.</b>
 </figure>
+     
+Onde 'Horário' representa o horário e dia em qual o acesso ocorreu, com precisão de segundos. Para obter o horário atual foi usada a API *timeapi.io* através do método *urequest.get()*. 
 
-# 4. Discussão/Conclusão/Coisas a melhorar/acrescentar
+# 4. Conclusão
 
-O objetivo proposto foi cumprido: implementou-se com sucesso uma interface com o leitor de RFID RC522o leitor de RFID RC522.
+O objetivo proposto foi cumprido: implementou-se com sucesso uma interface com o leitor de RFID RC522.
 
 Como forma de complementar o projecto, empregou-se um sistema de notificações por e-mail e um sistema de registo de leituras.
 
@@ -181,4 +179,4 @@ Como forma de melhorar o projecto, podia-se ter implementado um "buzzer".
 - https://paginas.fe.up.pt/~hsm/docencia/edm/edm-2021-22/serial/
 - https://github.com/cefn/micropython-mfrc522 
 - https://lastminuteengineers.com/how-rfid-works-rc522-arduino-tutorial/
-
+- https://microcontrollerslab.com/micropython-esp32-esp8266-send-sensor-readings-via-email-ifttt/
