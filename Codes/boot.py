@@ -14,10 +14,9 @@ wlan.active(True)
 print(wlan.scan())
 if not wlan.isconnected():
     print('Connecting to network...')
-    wlan.connect(ssid, password)
+    wlan.connect(ssid, password)   #'HUAWEI', 'vouchorar'
     while not wlan.isconnected():
         print('.', end='')
         time.sleep(0.1)
     print(' Connected!')
 print('network config:', wlan.ifconfig())
-
