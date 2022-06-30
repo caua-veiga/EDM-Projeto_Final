@@ -53,7 +53,7 @@ Especificações:
 
 # 3. Descrição
 
-# 3.1. Tecnologia *Radio Frequency IDentification*
+# 3.1. Tecnologia *Radio Frequency IDentification*  <a href ='https://lastminuteengineers.com/how-rfid-works-rc522-arduino-tutorial/'>referencia</a>
 
 Um sistema RFID consiste basicamente em dois componentes principais, um objeto contendo uma *tag* (o qual será identificado), e um *leitor* que irá ler esta *tag*.
 
@@ -66,7 +66,7 @@ Quando a *tag* é aproximada ao *leitor*, o *leitor* gera um campo magnético e 
      style="vertical-align:middle;margin:10px 115px" />
 
 <figcaption align = "center"><b>Fig.1 - Funcionamento sistema RFID.
- <a href ='lastminuteengineers.com'>lastminuteengineers.com</a></b></figcaption>
+ <a href ='https://lastminuteengineers.com/how-rfid-works-rc522-arduino-tutorial/'>lastminuteengineers.com</a></b></figcaption>
 </figure>
 
 ## 3.2. Cadastro Objetos
