@@ -6,6 +6,8 @@ import uasyncio
 import urequests
 import json
 from mysecrets import api_key as apikey
+from mysecrets import PIN
+
 
 
 # Definindo Led Pins
@@ -112,11 +114,21 @@ async def main():
 
                 # Para caso o cartão ainda não estiver registrado:
                 if card_id not in ids:
+                    pin_correto = False
+
                     print('O cartão ainda não está registrado, por favor entre as informações a seguir: ')
-                    ob = input('Objeto: ')
-                    nm = input('Nome: ')
-                    es = int(input('Estado (-1:Negado||0:Liberado): ')) # -1= negado, 0=liberado
-                    ids[card_id] = [ob,nm,es]
+                    pin_ = input('PIN para registrar cartões no sistema: ')
+                    if pin_ == PIN:
+                        ob = input('Objeto: ')
+                        nm = input('Nome: ')
+                        es = int(input('Estado (-1:Negado||0:Liberado): ')) # -1= negado, 0=liberado
+                        ids[card_id] = [ob,nm,es]
+                        continue
+                    else:
+                        print('PIN incorreto, não é possível registrar o cartão',end='\n')
+                        print('Passe o cartão novamente',end='\n')
+                        continue
+
 
                 print(f'{ids[card_id][0]}: {ids[card_id][1]} --',end=' ')
 
@@ -138,12 +150,6 @@ async def main():
 
                 # Mandar email caso for negado
                 if output.lower() == 'negado':
-                    #info = {"value1":card_id, "value2":ids[card_id][1]}
-                    #request_headers = {"Content-Type": "application/json"}
-                    #request = urequests.post(link_2,
-                    #    json = info, headers=request_headers)
-                    #request.close()
-                    #uasyncio.create_task(email(card_id,ids[card_id][1]))
                     email(card_id,ids[card_id][1])
 
                 print(output)

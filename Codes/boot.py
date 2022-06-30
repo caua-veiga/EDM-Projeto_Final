@@ -4,10 +4,13 @@
 #import webrepl
 #webrepl.start()
 
-from mysecrets import ssid, password, api_key
+from mysecrets import enderecos, api_key
 import time
 import network
 import urequests
+
+
+ssid, password = enderecos['iphone_caua']
 
 wlan = network.WLAN(network.STA_IF)
 wlan.active(True)
