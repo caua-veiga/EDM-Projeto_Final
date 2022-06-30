@@ -61,10 +61,6 @@ with open('registros.json') as json_file:
 async def main():
     global ids
 
-
-    print(link_2)
-
-
     ENTRADA_SAIDA = 2
 
     print("Place card")

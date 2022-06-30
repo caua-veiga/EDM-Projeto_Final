@@ -114,7 +114,14 @@ O código foi baseado no artigo: https://microcontrollerslab.com/micropython-esp
 
 
 ## 3.6. Registro de acessos
-TO-DO: falar website
+De modo a gerir o histórico de acessos foi criada uma página web na qual é registrada em tempo real os acessos e tentativas de acessos realizadas. Para isso é gerado um HTML o qual é hosteado a partir do método sockets. 
+
+Os dados registrados são do tipo, como mostrado na imagem (REFERENCIAR IMAGEM PRINT WEBSITE):
+
+|  Data  |  Obejto  |  Nome  |  Estado  |
+|--------|----------|--------|----------|
+
+Onde 'Data' representa o horário em qual o acesso ocorreu, com precisão de segundos. Para obter o horário atual foi usada a API *timeapi.io* através do método *urequest.get()*. 
 
 
 # 4. Discussão/Conclusão/Coisas a melhorar/acrescentar
