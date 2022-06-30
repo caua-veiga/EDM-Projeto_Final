@@ -118,11 +118,20 @@ De modo a gerir o histórico de acessos foi criada uma página web na qual é re
 
 Os dados registrados são do tipo, como mostrado na imagem (REFERENCIAR IMAGEM PRINT WEBSITE):
 
-|  Data  |  Obejto  |  Nome  |  Estado  |
+|  Horário  |  Tipo  |  Nome  |  Estado  |
 |--------|----------|--------|----------|
 
-Onde 'Data' representa o horário em qual o acesso ocorreu, com precisão de segundos. Para obter o horário atual foi usada a API *timeapi.io* através do método *urequest.get()*. 
+Onde 'Horário' representa o horário e dia em qual o acesso ocorreu, com precisão de segundos. Para obter o horário atual foi usada a API *timeapi.io* através do método *urequest.get()*. 
 
+<figure>
+<img src="images/print_website.png"
+     alt="website image"
+     width="530" 
+     height="300"
+     style="vertical-align:middle;margin:10px 110px" />
+
+<figcaption align = "center"><b>Fig.3 - Exemplo website.
+</figure>
 
 # 4. Discussão/Conclusão/Coisas a melhorar/acrescentar
 
