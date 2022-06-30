@@ -101,9 +101,30 @@ Uma notificação é enviada por e-mail a um grupo de pessoas pré-definidas com
 
 Prosegue-se ao cadastro da pessoa: O nome é introduzido, juntamente com o estatuto de acesso à sala. A interface pede um PIN secreto. Este PIN é definido no ficheiro "mysecrets.py".
 
+## 3.4. Comunicação do ESP32 com o leitor RFID
+O RFID RC522 comunica com o ESP32 através do protocolo SPI. Esta comunicação é facilitada recorrendo a uma biblioteca de terceiros obtida em https://github.com/cefn/micropython-mfrc522. 
 
-## 3.4. Comuniação entre componentes
-O RFID RC522 comunica com o ESP32 através do protocolo SPI tal e tal. A programação foi baseada em talv e tal código.
+### 3.4.1. SPI (Fonte: wikipédia e página web do professor Hélio Mendonça)
+SPI, do inglês Serial Peripheral Interface, é um protocolo de comunicação síncrona *full duplex*, de arquitetura *master/slave* que permite a comunicação entre o microcontrolador (master) e diversos componentes (slaves). 
+
+O barramento deste protocolo possui quatro linhas de transmissão de dados:
+
+- MOSI: transmite dados do Master para o Slave.   
+- MISO: transmite dados do Slave para o Master.
+- SCLK: sinal de relógio.
+- SS: define com qual slave o master pretende comunicar.
+
+Quando se inicia este protocolo, é necessário definir os pinos para os sinais SCK, MOSI e MISO, a frequência de relógio a usar e os parâmetros *polarity* e *phase*.
+A polaridade define que estado o sinal de relógio assume enquanto se encontra em repouso. A fase, por sua vez, define em que momento a informação é amostrada: na subida ou na descida do sinal de relógio.
+A seguinte figura ajuda a perceber o conceito de polaridade e fase: 
+(INSERIR ESQUEMA POLARIDADE E FASE PÁGINA PROFESSOR HÉLIO)
+
+### 3.4.2. MFRC522
+Esta biblioteca possui uma classe MFRC522 da qual se usou as seguintes funções:
+
+- MFRC522(): cria um objeto dessa classe. 
+- request(): retorna uma confirmação de que a leitura foi realizada com sucesso.
+- anticoll(): retorna o ID do cartão lido juntamente com a confirmação de que a leitura foi realizada com sucesso.
 
 ## 3.5. Notificação por e-mail
 
