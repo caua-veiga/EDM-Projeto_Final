@@ -49,7 +49,7 @@ Especificações:
      height="500"
      style="vertical-align:middle;margin:10px 65px" />
 
-<figcaption align = "center"><b>Fig.2. Montagem utilizada.</b></figcaption>
+<figcaption align = "center"><b>Fig.1. Montagem utilizada.</b></figcaption>
 </figure>
 
 
@@ -67,7 +67,7 @@ Quando a *tag* é aproximada ao *leitor*, o *leitor* gera um campo magnético e 
      alt="RFID leitor_tag image"
      style="vertical-align:middle;margin:10px 115px" />
 
-<figcaption align = "center"><b>Fig.1 - Funcionamento sistema RFID.
+<figcaption align = "center"><b>Fig.2 - Funcionamento sistema RFID.
  <a href ='https://lastminuteengineers.com/how-rfid-works-rc522-arduino-tutorial/'>lastminuteengineers.com</a></b></figcaption>
 </figure>
 
@@ -127,7 +127,7 @@ A seguinte figura ajuda a perceber o conceito de polaridade e fase:
      height="300"
      style="vertical-align:middle;margin:10px 130px" />
 
-<figcaption align = "center"><b>Fig.2 - Modos SPI.
+<figcaption align = "center"><b>Fig.3 - Modos SPI.
  <a href ='https://paginas.fe.up.pt/~hsm/docencia/edm/edm-2021-22/serial/'>Página EDM _ Hélio</a></b></figcaption>
 </figure>
 
@@ -163,7 +163,7 @@ Onde 'Horário' representa o horário e dia em qual o acesso ocorreu, com precis
      height="300"
      style="vertical-align:middle;margin:10px 110px" />
 
-<figcaption align = "center"><b>Fig.3 - Exemplo website.
+<figcaption align = "center"><b>Fig.4 - Exemplo website.
 </figure>
 
 # 4. Discussão/Conclusão/Coisas a melhorar/acrescentar
@@ -180,4 +180,5 @@ Como forma de melhorar o projecto, podia-se ter implementado um "buzzer".
 - https://pt.wikipedia.org/wiki/Serial_Peripheral_Interface
 - https://paginas.fe.up.pt/~hsm/docencia/edm/edm-2021-22/serial/
 - https://github.com/cefn/micropython-mfrc522 
+- https://lastminuteengineers.com/how-rfid-works-rc522-arduino-tutorial/
 
