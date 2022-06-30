@@ -117,7 +117,17 @@ O barramento deste protocolo possui quatro linhas de transmissão de dados:
 Quando se inicia este protocolo, é necessário definir os pinos para os sinais SCK, MOSI e MISO, a frequência de relógio a usar e os parâmetros *polarity* e *phase*.
 A polaridade define que estado o sinal de relógio assume enquanto se encontra em repouso. A fase, por sua vez, define em que momento a informação é amostrada: na subida ou na descida do sinal de relógio.
 A seguinte figura ajuda a perceber o conceito de polaridade e fase: 
-(INSERIR ESQUEMA POLARIDADE E FASE PÁGINA PROFESSOR HÉLIO)
+
+<figure>
+<img src="images/spi-modes.png"
+     alt="spi image"
+     width="430" 
+     height="300"
+     style="vertical-align:middle;margin:10px 130px" />
+
+<figcaption align = "center"><b>Fig.2 - Modos SPI.
+ <a href ='https://paginas.fe.up.pt/~hsm/docencia/edm/edm-2021-22/serial/'>Página EDM _ Hélio</a></b></figcaption>
+</figure>
 
 ### 3.4.2. MFRC522
 Esta biblioteca possui uma classe MFRC522 da qual se usou as seguintes funções:
